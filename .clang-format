@@ -1,0 +1,56 @@
+BasedOnStyle: Chromium
+
+Language:        Cpp
+Standard:        Latest 
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: BlockIndent
+Cpp11BracedListStyle: false
+BreakBeforeBinaryOperators: All
+
+SpacesBeforeTrailingComments: 1
+
+ColumnLimit: 0
+ContinuationIndentWidth: 4
+
+EmptyLineAfterAccessModifier: Always
+EmptyLineBeforeAccessModifier: Always
+
+BreakFunctionDefinitionParameters: true
+
+MaxEmptyLinesToKeep: 1
+
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: true
+  AtStartOfFile: true
+
+# Args to new line
+BinPackArguments: false
+BinPackParameters: false
+ExperimentalAutoDetectBinPacking: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+BreakConstructorInitializers: BeforeComma
+
+# Number of columns to use for indentation
+IndentWidth:     4
+FixNamespaceComments: true
+
+BreakBeforeBraces: Allman
+PenaltyIndentedWhitespace: 1
+
+# Sort each #include block separately (blocks of includes are separated by empty lines)
+IncludeBlocks:  Preserve
+
+SortIncludes: true
+IncludeCategories:
+  # Qt headers
+  - Regex:           '<Q([A-Za-z0-9-_])+>'
+    Priority:        2
+  # Qt headers
+  - Regex:           '</Q([A-Za-z0-9-_])+>'
+    Priority:        1
+  # GSL headers
+  - Regex:           '<([A-Za-z0-9-])+\/([A-Za-z0-9-])+>'
+    Priority:        5
