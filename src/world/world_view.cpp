@@ -76,6 +76,7 @@ public:
 
     std::vector<Button> buttons;
     int currentButtonId{ -1 };
+
 };
 
 WorldView::PrivateData::PrivateData(
