@@ -1,0 +1,17 @@
+# For CMake
+*CMakeLists.txt.user
+*.user
+
+# For Visual Studio
+.vs
+CMakeSettings.json
+CMakePresets.json
+/out
+*.TMP
+
+# For Visual Studio Code
+/.vscode
+**/build
+
+#qtcreator
+*.qtcreator
